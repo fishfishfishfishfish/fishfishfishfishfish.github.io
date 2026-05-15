@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人知识库</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 960px;
+        }
+        .jumbotron {
+            background-color: #e9ecef;
+            padding: 2rem 2rem;
+        }
+        .card {
+            margin-bottom: 20px;
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: 0.25rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            padding: 0.75rem 1.25rem;
+            border-bottom: 1px solid rgba(0,0,0,.125);
+            border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+        }
+        .card-body {
+            padding: 1.25rem;
+        }
+        .list-group-item {
+            border: 1px solid rgba(0,0,0,.125);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">个人知识库</h1>
+            <p class="lead">欢迎来到我的技术分享空间，这里包含算法实现、数据可视化和命令行笔记等内容。</p>
+            <hr class="my-4">
+            <p>持续更新，欢迎访问！</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>📊 算法与可视化</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="html/optimization-algorithm.html">优化算法实现与可视化</a>
+                                <small class="text-muted d-block">使用牛顿法和拟牛顿法寻找函数最小值，包含热力图可视化</small>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="html/data-visualization.html">数据可视化项目</a>
+                                <small class="text-muted d-block">Python数据探索与可视化实践</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>📓 命令行笔记</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="notes/linux命令笔记.md">Linux命令使用笔记</a>
+                                <small class="text-muted d-block">常用Linux命令的详细说明和使用示例</small>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="notes/windows命令行笔记.md">Windows命令行笔记</a>
+                                <small class="text-muted d-block">命令提示符和PowerShell使用技巧</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>🔗 相关项目</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="https://fishfishfishfishfish.github.io/Community-Detection-with-2NMF/">非负矩阵分解社区检测</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://fishfishfishfishfish.github.io/stanford_courses/">斯坦福课程学习笔记</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-5 mb-3 text-center text-muted">
+            <p>&copy; 2024 个人知识库 | Powered by GitHub Pages</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

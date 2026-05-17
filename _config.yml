@@ -6,7 +6,7 @@ email: sinyo_chenxy@outlook.com
 description: ""
 keyword: ""
 url: "http://fishfishfishfishfish.github.io"              # your host, for absolute URL
-baseurl: "/fishfishfishfishfish.github.io"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 

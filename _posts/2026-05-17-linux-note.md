@@ -1,3 +1,13 @@
+---
+layout: post
+title: "linux 笔记"
+subtitle: "简易教程"
+date: 2026-05-17
+author: "Hux"
+header-img: "img/post-bg-2015.jpg"
+tags: []
+---
+
 # ssh相关
 ## ssh免密码登陆
 设需要从B机器登陆到A机器

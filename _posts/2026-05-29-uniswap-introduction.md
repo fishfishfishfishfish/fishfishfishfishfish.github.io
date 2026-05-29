@@ -87,10 +87,13 @@ $k = 10 \times 20000 = 200000$
 新 $y = \dfrac{200000}{9} \approx 22222.22\ \text{USDC}$
 用户付出 USDC：$22222.22 - 20000 = 2222.22\ \text{USDC}$
 
-预期价格：y/x=k/xx
-成交价格：(kx-k-kx)/(x(x-1))
-k/(x(1-x))
-k/(xx-x)
+预期价格：$\frac{y}{x}=\frac{k}{x^2}$
+
+成交价格： $\frac{k}{x-1} - \frac{k}{x}=\frac{kx-k(x-1)}{x(x-1)}=\frac{k}{x(x-1)}$
+
+**理论分析**：根据恒定乘积公式 $x \times y = k$，当池子深度不足（$k$ 值较小）时，大额交易会显著改变池内资产比例。假设初始状态为 $x_0 \times y_0 = k$，当用户买入 $\Delta x$ 数量的资产 X 时，需要支付 $\Delta y$ 数量的资产 Y，满足 $(x_0 - \Delta x) \times (y_0 + \Delta y) = k = x_0 \times y_0$。解得 $\Delta y = y_0 \times (\frac{\Delta x}{x_0 - \Delta x} - 1)$。当 $x_0$ 较小时（深度不足），$\Delta x$ 会导致 $\Delta y$ 急剧增加，表现为价格暴涨；反之，大额卖出会导致价格暴跌。
+
+价格 $P = \frac{y}{x}$，交易后价格变为 $P' = \frac{y_0 + \Delta y}{x_0 - \Delta x} = \frac{y_0}{x_0 - \Delta x} \times \frac{x_0}{x_0} = P_0 \times \frac{x_0}{x_0 - \Delta x}$。当 $\Delta x$ 相对于 $x_0$ 较大时，$P'$ 会远大于 $P_0$，形成滑点。
 
 **结果对比**
 1. 成交价：**2222.22 USDC/ETH**，相比原价 2000，单笔交易直接拉升价格；

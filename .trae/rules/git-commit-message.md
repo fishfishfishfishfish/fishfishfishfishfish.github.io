@@ -1,8 +1,8 @@
 ---
-alwaysApply: true
+alwaysApply: false
+description: 进行git commit时
 scene: git_message
 ---
-
 请严格按照 Git Commit Message 规范生成提交信息，整体分为 Header、Body、Footer 三部分，段落之间必须用**空行**分隔。
 
 一、整体格式要求

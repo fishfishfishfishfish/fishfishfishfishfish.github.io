@@ -90,11 +90,34 @@ tags:
 
 ```
 
-在引入Rake工具之后（`gem install rake`），我们可以使用命令：
+我们提供了两种方式来自动生成文章模板：
+
+### 方式一：使用PowerShell脚本（推荐，无需额外依赖）
+```powershell
+# 创建带副标题的文章
+.\New-Post.ps1 -Title "Hello 2015" -Subtitle "Hello World, Hello Blog"
+
+# 创建只有标题的文章
+.\New-Post.ps1 -Title "我的第一篇文章"
+```
+
+### 方式二：使用Bash脚本（适用于WSL或Linux环境）
 ```bash
+# 创建带副标题的文章
+./new-post.sh title="Hello 2015" subtitle="Hello World, Hello Blog"
+
+# 创建只有标题的文章
+./new-post.sh title="我的第一篇文章"
+```
+
+### 方式三：使用Rake工具（需要Ruby环境）
+```bash
+# 先安装Rake
+gem install rake
+
+# 创建文章
 rake post title="Hello 2015" subtitle="Hello World, Hello Blog"
 ```
-来自动生成上面的文章模板。
 
 #### SideBar
 

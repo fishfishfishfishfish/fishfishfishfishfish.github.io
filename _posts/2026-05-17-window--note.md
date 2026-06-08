@@ -4,8 +4,11 @@ title: "window  笔记"
 subtitle: "简易教程"
 date: 2026-05-17
 author: "Hux"
-header-img: "img/post-bg-2015.jpg"
-tags: []
+header-img: "img/post/post-bg-2015.jpg"
+tags: [
+    "Windows",
+    "System",
+]
 ---
 
 # bat批处理命令

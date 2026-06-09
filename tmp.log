@@ -1,0 +1,206 @@
+PS C:\Users\admin> cd e:\Projects\fishfishfishfishfish.github.io
+PS E:\Projects\fishfishfishfishfish.github.io> Remove-Item Gemfile.lock -Force
+PS E:\Projects\fishfishfishfishfish.github.io> bundle install
+[DEPRECATED] Platform :mingw, :x64_mingw, :mswin will be removed in the future. Please use platform :windows instead.
+Fetching gem metadata from https://rubygems.org/...........
+Resolving dependencies...
+Installing http_parser.rb 0.8.1 with native extensions
+Installing eventmachine 1.2.7 with native extensions
+current directory: C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+["D:/Programs/Ruby32-x64/bin/ruby.exe", "extconf.rb"]
+current directory: C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/eventmachine-1.2.7/ext
+["D:/Programs/Ruby32-x64/bin/ruby.exe", "extconf.rb"]
+creating Makefile
+current directory: C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+["make", "DESTDIR=", "sitearchdir=./.gem.20260609-3600-z628ex", "sitelibdir=./.gem.20260609-3600-z628ex", "clean"]
+make: /bin/sh: Command not found
+make: [Makefile:195: clean-static] Error 127 (ignored)
+make: /bin/sh: Command not found
+make: [Makefile:178: clean] Error 127 (ignored)
+current directory: C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+["make", "DESTDIR=", "sitearchdir=./.gem.20260609-3600-z628ex", "sitelibdir=./.gem.20260609-3600-z628ex"]
+make: /bin/sh: Command not found
+make: *** [Makefile:270: ruby_http_parser-x64-mingw-ucrt.def] Error 127
+checking for -lcrypto... no
+checking for -lssleay32... no
+checking for rb_trap_immediate in ruby.h,rubysig.h... no
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_without_gvl() in ruby/thread.h... yes
+checking for rb_thread_fd_select()... yes
+checking for rb_fdset_t in ruby/intern.h... yes
+checking for rb_wait_for_single_fd()... yes
+checking for rb_enable_interrupt()... no
+checking for rb_time_new()... yes
+checking for inotify_init() in sys/inotify.h... no
+checking for __NR_inotify_init in sys/syscall.h... no
+checking for writev() in sys/uio.h... no
+checking for pipe2() in unistd.h... no
+checking for accept4() in sys/socket.h... no
+checking for SOCK_CLOEXEC in sys/socket.h... no
+checking for clock_gettime()... yes
+checking for CLOCK_MONOTONIC_RAW in time.h... no
+checking for CLOCK_MONOTONIC in time.h... yes
+CXXFLAGS=-march=nocona -msahf -mtune=generic -O2 -pipe -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong -Wp,-D__USE_MINGW_ANSI_STDIO=1 -Wall -Wextra -Wno-deprecated-declarations -Wno-ignored-qualifiers -Wno-unused-result -Wno-address
+creating Makefile
+current directory: C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/eventmachine-1.2.7/ext
+["make", "DESTDIR=", "sitearchdir=./.gem.20260609-3600-cakmwm", "sitelibdir=./.gem.20260609-3600-cakmwm", "clean"]
+make: /bin/sh: Command not found
+make: [Makefile:195: clean-static] Error 127 (ignored)
+make: /bin/sh: Command not found
+make: [Makefile:178: clean] Error 127 (ignored)
+current directory: C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/eventmachine-1.2.7/ext
+["make", "DESTDIR=", "sitearchdir=./.gem.20260609-3600-cakmwm", "sitelibdir=./.gem.20260609-3600-cakmwm"]
+make: /bin/sh: Command not found
+make: *** [Makefile:270: rubyeventmachine-x64-mingw-ucrt.def] Error 127
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/eventmachine-1.2.7/ext
+D:/Programs/Ruby32-x64/bin/ruby.exe extconf.rb
+current directory:
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/eventmachine-1.2.7/ext
+make DESTDIR\= sitearchdir\=./.gem.20260609-3600-cakmwm
+sitelibdir\=./.gem.20260609-3600-cakmwm clean
+current directory:
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/eventmachine-1.2.7/ext
+make DESTDIR\= sitearchdir\=./.gem.20260609-3600-cakmwm
+sitelibdir\=./.gem.20260609-3600-cakmwm
+Building has failed. See above output for more information on the failure.
+make failed, exit code 2
+
+Gem files will remain installed in
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/eventmachine-1.2.7 for
+inspection.
+Results logged to
+C:/Users/admin/.local/share/gem/ruby/3.2.0/extensions/x64-mingw-ucrt/3.2.0/eventmachine-1.2.7/gem_make.out
+
+  D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:119:in `run'
+D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:53:in `block in
+make'
+  D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:45:in `each'
+  D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:45:in `make'
+D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/ext_conf_builder.rb:42:in
+`build'
+D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:187:in
+`build_extension'
+D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:221:in `block in
+build_extensions'
+  D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:218:in `each'
+D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:218:in
+`build_extensions'
+D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/installer.rb:846:in
+`build_extensions'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/rubygems_gem_installer.rb:112:in
+`build_extensions'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/rubygems_gem_installer.rb:30:in
+`install'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/source/rubygems.rb:211:in
+`block in install'
+  D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems.rb:962:in `time'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/source/rubygems.rb:210:in
+`install'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/installer/gem_installer.rb:68:in
+`install'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/installer/gem_installer.rb:17:in
+`install_from_spec'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/installer/parallel_installer.rb:164:in
+`do_install'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/installer/parallel_installer.rb:134:in
+`block in worker_pool'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/worker.rb:70:in
+`apply_func'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/worker.rb:65:in
+`block in process_queue'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/worker.rb:56:in
+`loop'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/worker.rb:56:in
+`process_queue'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/worker.rb:98:in
+`block (2 levels) in create_threads'
+
+An error occurred while installing eventmachine (1.2.7), and Bundler cannot
+continue.
+
+In Gemfile:
+  minima was resolved to 2.5.2, which depends on
+    jekyll-feed was resolved to 0.17.0, which depends on
+      jekyll was resolved to 3.9.5, which depends on
+        em-websocket was resolved to 0.5.3, which depends on
+          eventmachine
+
+
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+D:/Programs/Ruby32-x64/bin/ruby.exe extconf.rb
+current directory:
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260609-3600-z628ex
+sitelibdir\=./.gem.20260609-3600-z628ex clean
+current directory:
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260609-3600-z628ex
+sitelibdir\=./.gem.20260609-3600-z628ex
+Building has failed. See above output for more information on the failure.
+make failed, exit code 2
+
+Gem files will remain installed in
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/http_parser.rb-0.8.1 for
+inspection.
+Results logged to
+C:/Users/admin/.local/share/gem/ruby/3.2.0/extensions/x64-mingw-ucrt/3.2.0/http_parser.rb-0.8.1/gem_make.out
+
+  D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:119:in `run'
+D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:53:in `block in
+make'
+  D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:45:in `each'
+  D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:45:in `make'
+D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/ext_conf_builder.rb:42:in
+`build'
+D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:187:in
+`build_extension'
+D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:221:in `block in
+build_extensions'
+  D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:218:in `each'
+D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/ext/builder.rb:218:in
+`build_extensions'
+D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems/installer.rb:846:in
+`build_extensions'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/rubygems_gem_installer.rb:112:in
+`build_extensions'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/rubygems_gem_installer.rb:30:in
+`install'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/source/rubygems.rb:211:in
+`block in install'
+  D:/Programs/Ruby32-x64/lib/ruby/3.2.0/rubygems.rb:962:in `time'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/source/rubygems.rb:210:in
+`install'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/installer/gem_installer.rb:68:in
+`install'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/installer/gem_installer.rb:17:in
+`install_from_spec'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/installer/parallel_installer.rb:164:in
+`do_install'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/installer/parallel_installer.rb:134:in
+`block in worker_pool'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/worker.rb:70:in
+`apply_func'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/worker.rb:65:in
+`block in process_queue'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/worker.rb:56:in
+`loop'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/worker.rb:56:in
+`process_queue'
+C:/Users/admin/.local/share/gem/ruby/3.2.0/gems/bundler-4.0.11/lib/bundler/worker.rb:98:in
+`block (2 levels) in create_threads'
+
+An error occurred while installing http_parser.rb (0.8.1), and Bundler cannot
+continue.
+
+In Gemfile:
+  minima was resolved to 2.5.2, which depends on
+    jekyll-feed was resolved to 0.17.0, which depends on
+      jekyll was resolved to 3.9.5, which depends on
+        em-websocket was resolved to 0.5.3, which depends on
+          http_parser.rb

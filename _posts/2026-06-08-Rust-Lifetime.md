@@ -6,7 +6,9 @@ date: 2026-06-08 09:57:30
 author: ""
 header-img: "img/post/post-bg-2026-06.jpg"
 tags:
-    - 
+    - Language
+    - Rust
+    - Lifetime
 ---
 ## Rust 生命周期 (Lifetime)
 

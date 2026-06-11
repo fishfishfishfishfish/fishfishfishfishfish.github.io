@@ -206,4 +206,7 @@ gh status
 
 ## 12. remote
 创建新的remote仓库
-
+```
+git remote add {remote_name} https://github.com/{username}/{repo}.git
+git push -u {remote_name} {branch_name}
+```

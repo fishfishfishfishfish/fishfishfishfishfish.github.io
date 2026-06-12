@@ -2,7 +2,7 @@
 layout: post
 title: "Docker 配置镜像加速"
 subtitle: "国内镜像源配置与优化"
-date: 2026-06-11 10:15:42
+date: 2026-06-11
 author: "Sinyo"
 header-img: "img/post/post-bg-2026-06.jpg"
 tags:

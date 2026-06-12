@@ -2,7 +2,7 @@
 layout: post
 title: "GitHub 使用小技巧集合"
 subtitle: "提升效率的实用技巧"
-date: 2026-06-11 09:36:26
+date: 2026-06-11
 author: "Sinyo"
 header-img: "img/post/post-bg-2026-06.jpg"
 tags:

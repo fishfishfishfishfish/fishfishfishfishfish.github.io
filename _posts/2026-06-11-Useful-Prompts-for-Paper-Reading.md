@@ -3,7 +3,7 @@ layout: post
 title: "Useful Prompts for Paper Reading"
 subtitle: "提升论文阅读效率的AI提示词"
 date: 2026-06-11 09:57:29
-author: ""
+author: "Sinyo"
 header-img: "img/post/post-bg-2026-06.jpg"
 tags:
     - AI

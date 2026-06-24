@@ -15,14 +15,19 @@ tags:
 有的。书中[1]涉及了多个 consistency 级别，按一致性强度从强到弱排列：
 
 ### 1. **Linearizability（线性化一致性）**
-- 书中定义在第 1121 页（23.4.1 节）：所有 read/write 操作必须满足一个线性顺序，每个 read 看到的是最近一次 write 的值；如果操作 o1 在 o2 开始前结束，则 o1 必须在顺序中排在 o2 之前。
+- 书中定义在第 1121 页（23.4.1 节）：More formally, the implementations of read and write operations on the replicas of a data item must follow a protocol that ensures the following property, called **linearizability**: 
+  1. Given a set of read and write operations on a data item,  1. there must be a linear ordering of the operations such that each read in the ordering should see the value written by the most recent write preceding the read (or the initial value if there is no such write), and  
+  2. if an operation o1 finishes before an operation o2 begins (based on external time),  then o1 must precede o2 in the linear order.
+- 所有 read/write 操作必须满足一个线性顺序，每个 read 看到的是最近一次 write 的值；如果操作 o1 在 o2 开始前结束，则 o1 必须在顺序中排在 o2 之前。
 - 这是**最强**的副本一致性保证，也是分布式系统里最常用的高标准。
 
 ### 2. **External Consistency（外部一致性）**
-- 第 1131 页（23.5.1 节）提到：事务的串行化顺序与真实时间顺序一致。Google Spanner 通过 commit-wait 机制实现。
+- 第 1131 页（23.5.1 节）提到：A database system is said to provide **external consistency** if the serialization order is consistent with the real-world time ordering in which the transactions commit.
+- 事务的串行化顺序与真实时间顺序一致。Google Spanner 通过 commit-wait 机制实现。
 
 ### 3. **Eventual Consistency（最终一致性）**
-- 第 1016 页定义：用持久消息异步传播更新，所有副本**最终**会收敛到一致状态，但中间可能有延迟，部分副本可能暂时落后。
+- 第 1016 页定义：Once the message is recorded, the persistent messaging system ensures it will be delivered to all replicas. Thus, all replicas will get the update, eventually; the property is known as **eventual consistency** of replicas.
+- 用持久消息异步传播更新，所有副本**最终**会收敛到一致状态，但中间可能有延迟，部分副本可能暂时落后。
 - 第 1139 页将其作为弱一致性场景（BASE 系统）的第三步要求。
 
 ### 4. **Weak Consistency（弱一致性）**

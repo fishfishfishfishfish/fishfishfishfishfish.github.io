@@ -1,6 +1,9 @@
 <#
 .SYNOPSIS
 创建新的Jekyll文章，替代Rake功能
+使用方法：
+./New-Post.ps1 -Title "文章标题" -Subtitle "文章副标题"
+./New-Post.ps1 -Title "文章标题"
 #>
 
 param(
